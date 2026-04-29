@@ -1,0 +1,16 @@
+.filter-sidebar {
+  width: 240px; flex-shrink: 0;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.5rem;
+  height: fit-content; position: sticky; top: 80px;
+}
+.filter-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.filter-header h3 { font-family: var(--font-display); font-size: 1.1rem; }
+.reset-btn { background: none; border: none; color: var(--accent); font-size: 0.8rem; cursor: pointer; }
+.filter-group { margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 6px; }
+.filter-group label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.filter-group select {
+  background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text); padding: 0.5rem; border-radius: 6px; font-size: 0.85rem;
+}
+.filter-group input[type="range"] { accent-color: var(--accent); width: 100%; }
