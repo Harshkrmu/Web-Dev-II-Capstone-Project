@@ -14,3 +14,12 @@
   color: var(--text); padding: 0.5rem; border-radius: 6px; font-size: 0.85rem;
 }
 .filter-group input[type="range"] { accent-color: var(--accent); width: 100%; }
+
+@media (max-width: 900px) {
+  .filter-sidebar {
+    width: 100%;
+    position: static;
+    top: auto;
+    margin-bottom: 1.5rem;
+  }
+}

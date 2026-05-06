@@ -25,3 +25,29 @@
 .co-item div { flex: 1; }
 .co-qty { color: var(--muted); font-size: 0.8rem; }
 .co-total { display: flex; justify-content: space-between; font-weight: 700; font-size: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+
+@media (max-width: 900px) {
+  .checkout-page {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-form {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-form .form-group:nth-child(2),
+  .checkout-form .form-group:nth-child(3),
+  .checkout-next-btn {
+    grid-column: span 1;
+  }
+
+  .checkout-order-summary {
+    position: static;
+    top: auto;
+    width: 100%;
+  }
+}

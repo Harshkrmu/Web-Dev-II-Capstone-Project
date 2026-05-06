@@ -4,3 +4,9 @@
 .wishlist-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; }
 .empty-state { text-align: center; padding: 6rem 2rem; color: var(--muted); }
 .empty-icon { font-size: 4rem; margin-bottom: 1rem; }
+
+@media (max-width: 900px) {
+  .wishlist-page {
+    padding: 1.5rem 1rem 3rem;
+  }
+}

@@ -30,3 +30,22 @@
 .success-amount { font-size: 1.2rem; font-weight: 700; color: var(--accent) !important; margin: 1rem 0; }
 .back-home-btn { margin-top: 1.5rem; padding: 0.85rem 2.5rem; background: var(--accent); color: #000; border-radius: 50px; font-weight: 600; transition: opacity 0.2s; }
 .back-home-btn:hover { opacity: 0.85; }
+
+@media (max-width: 600px) {
+  .payment-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .payment-card {
+    padding: 1.75rem;
+  }
+
+  .payment-row {
+    grid-template-columns: 1fr;
+  }
+
+  .card-bottom {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

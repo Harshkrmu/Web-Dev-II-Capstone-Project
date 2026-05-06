@@ -48,3 +48,31 @@
 .empty-state { text-align: center; padding: 6rem 2rem; color: var(--muted); }
 .empty-icon { font-size: 3rem; margin-bottom: 1rem; }
 .shop-btn { margin-top: 1rem; background: var(--accent); color: #000; padding: 0.75rem 2rem; border-radius: 50px; font-weight: 600; }
+
+@media (max-width: 900px) {
+  .cart-page {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary {
+    position: static;
+    top: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .item-price {
+    min-width: auto;
+    text-align: left;
+  }
+}
