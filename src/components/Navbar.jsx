@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
+import ThemeToggle from './ThemeToggle';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -20,6 +21,7 @@ export default function Navbar() {
         {user && <Link to="/cart">Cart {count > 0 && <span className="badge">{count}</span>}</Link>}
       </div>
       <div className="navbar-actions">
+        <ThemeToggle />
         {user ? (
           <>
             <span className="navbar-user">Hi, {user.name.split(' ')[0]}</span>

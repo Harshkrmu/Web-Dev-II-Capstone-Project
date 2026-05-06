@@ -1,0 +1,130 @@
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-buttons {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--surface2);
+  padding: 0.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  color: var(--text);
+}
+
+.theme-btn:hover {
+  background: var(--border);
+}
+
+.theme-btn.active {
+  background: var(--accent);
+  color: #000;
+}
+
+.color-picker-wrapper {
+  position: relative;
+}
+
+.color-picker-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.color-picker-btn:hover {
+  border-color: var(--accent);
+  transform: scale(1.05);
+}
+
+.color-picker-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  min-width: 280px;
+}
+
+.preset-colors {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.preset-color {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 3px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.preset-color:hover {
+  transform: scale(0.95);
+}
+
+.preset-color.selected {
+  border-color: var(--text);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
+.custom-color-input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-color-input:hover {
+  border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle-container {
+    gap: 0.5rem;
+  }
+
+  .theme-buttons {
+    gap: 0.3rem;
+    padding: 0.2rem;
+  }
+
+  .theme-btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .color-picker-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .color-picker-menu {
+    min-width: 240px;
+    right: -100px;
+  }
+}
